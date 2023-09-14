@@ -2,6 +2,13 @@
 
 <!-- [![DOI](https://zenodo.org/badge/292225878.svg)](https://ieeexplore.ieee.org/document/10235260) -->
 
+
+## Environments
+With the installed conda, you can run this project in a conda virtual environment.
+* **Python**: 3.7
+* **Pytorch**: 1.13.1
+* **[seal](https://github.com/Huelse/SEAL-Python)**: 4.0.0
+
 Some descriptions on the way.
 
 
