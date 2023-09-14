@@ -1,5 +1,13 @@
-# Efficient-Privacy-Preserving-Federated-Learning-with-Compressed-Sensing
-The source code of the paper "Efficient Privacy-Preserving Federated Learning with Compressed Sensing"
+# Efficient-Privacy-Preserving-Federated-Learning-With-Improved-Compressed-Sensing
+
+<!-- [![DOI](https://zenodo.org/badge/292225878.svg)](https://ieeexplore.ieee.org/document/10235260) -->
+
+Some descriptions.
 
 
-The source code will be avaliable within 2023.9. Thank you for waiting. Any question please contact <zhang_ivan1@163.com>.
+
+
+
+
+## Lecense
+This project is a modified version of [TsingZ0/PFL-Non-IID](https://github.com/TsingZ0/PFL-Non-IID), which is licensed under GPL-2.0. As a result, this project is also released under the GPL-2.0 license. For more details, please see the LICENSE file.
