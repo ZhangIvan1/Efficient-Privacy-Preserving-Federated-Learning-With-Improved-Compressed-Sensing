@@ -2,7 +2,7 @@
 
 <!-- [![DOI](https://zenodo.org/badge/292225878.svg)](https://ieeexplore.ieee.org/document/10235260) -->
 
-This is the code of paper [Efficient-Privacy-Preserving-Federated-Learning-With-Improved-Compressed-Sensin](https://ieeexplore.ieee.org/document/10235260).
+This is the code of paper [Efficient-Privacy-Preserving-Federated-Learning-With-Improved-Compressed-Sensing](https://ieeexplore.ieee.org/document/10235260).
 
 
 ## Environments
