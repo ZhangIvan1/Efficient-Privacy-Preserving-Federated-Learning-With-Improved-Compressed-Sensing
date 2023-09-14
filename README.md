@@ -20,7 +20,6 @@ If you find this repository useful, please cite our paper:
   number={},
   pages={1-11},
   doi={10.1109/TII.2023.3297596}}
-
 ```
 
 ## Lecense
