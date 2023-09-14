@@ -11,7 +11,15 @@ With the installed conda, you can run this project in a conda virtual environmen
 * **Pytorch**: 1.13.1
 * **[seal](https://github.com/Huelse/SEAL-Python)**: 4.0.0
 
+## Usage
+
 Some descriptions on the way.
+
+## Comparison Schemes
+
+Some descriptions on the way.
+
+
 
 
 
