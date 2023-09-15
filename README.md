@@ -17,7 +17,11 @@ Some descriptions on the way.
 
 ## Comparison Schemes
 
-Some descriptions on the way.
+You can find the comparative studies in the repository below.
+
+* **[PFL-Non-IID(baseline)](https://github.com/TsingZ0/PFL-Non-IID/tree/0af30fc8665e04ea9200b041f0c457c2260cbc99)**
+* **[HeteroFL](https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients)**
+* **[CEFL](https://github.com/AshwinRJ/Federated-Learning-PyTorch)**
 
 
 
