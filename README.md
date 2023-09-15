@@ -1,6 +1,6 @@
 # Efficient-Privacy-Preserving-Federated-Learning-With-Improved-Compressed-Sensing
 
-<!-- [![DOI](https://zenodo.org/badge/292225878.svg)](https://ieeexplore.ieee.org/document/10235260) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8347455.svg)](https://doi.org/10.5281/zenodo.8347455)
 
 This is the code of paper [Efficient-Privacy-Preserving-Federated-Learning-With-Improved-Compressed-Sensing](https://ieeexplore.ieee.org/document/10235260).
 
