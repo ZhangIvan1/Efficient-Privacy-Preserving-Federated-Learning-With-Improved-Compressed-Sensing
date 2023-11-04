@@ -52,16 +52,11 @@ class Server(object):
         self.join_ratio = args.join_ratio
         self.join_clients = int(self.num_clients * self.join_ratio)
         self.algorithm = args.algorithm
-        self.time_select = args.time_select
-        self.goal = args.goal
-        self.time_threthold = args.time_threthold
         self.save_folder_name = args.save_folder_name
         self.top_cnt = 100
 
         self.clients = []
         self.selected_clients = []
-        self.train_slow_clients = []
-        self.send_slow_clients = []
 
         self.uploaded_weights = []
         self.uploaded_ids = []
@@ -73,9 +68,6 @@ class Server(object):
 
         self.times = times
         self.eval_gap = args.eval_gap
-        self.client_drop_rate = args.client_drop_rate
-        self.train_slow_rate = args.train_slow_rate
-        self.send_slow_rate = args.send_slow_rate
 
         parms = EncryptionParameters(scheme_type.ckks)
         poly_modulus_degree = 8192
@@ -120,33 +112,16 @@ class Server(object):
         self.init = False
 
     def set_clients(self, args, clientObj):
-        for i, train_slow, send_slow in zip(range(self.num_clients), self.train_slow_clients, self.send_slow_clients):
+        for i in range(self.num_clients):
             train_data = read_client_data(self.dataset, i, is_train=True)
             test_data = read_client_data(self.dataset, i, is_train=False)
             client = clientObj(args,
                                id=i,
                                train_samples=len(train_data),
                                test_samples=len(test_data),
-                               ckks=self.ckks_tools,
-                               train_slow=train_slow,
-                               send_slow=send_slow)
+                               ckks=self.ckks_tools,)
             self.clients.append(client)
 
-    # random select slow clients
-    def select_slow_clients(self, slow_rate):
-        slow_clients = [False for i in range(self.num_clients)]
-        idx = [i for i in range(self.num_clients)]
-        idx_ = np.random.choice(idx, int(slow_rate * self.num_clients))
-        for i in idx_:
-            slow_clients[i] = True
-
-        return slow_clients
-
-    def set_slow_clients(self):
-        self.train_slow_clients = self.select_slow_clients(
-            self.train_slow_rate)
-        self.send_slow_clients = self.select_slow_clients(
-            self.send_slow_rate)
 
     def select_clients(self):
         selected_clients = list(np.random.choice(

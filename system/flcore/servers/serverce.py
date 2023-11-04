@@ -1,15 +1,13 @@
 import time
-from flcore.clients.clientce import clientAVG
+from flcore.clients.clientce import clientCE
 from flcore.servers.serverbase import Server
 
 
-class FedAvg(Server):
+class FedCE(Server):
     def __init__(self, args, times):
         super().__init__(args, times)
 
-        # select slow clients
-        self.set_slow_clients()
-        self.set_clients(args, clientAVG)
+        self.set_clients(args, clientCE)
 
         print(f"\nJoin ratio / total clients: {self.join_ratio} / {self.num_clients}")
         print("Finished creating server and clients.")

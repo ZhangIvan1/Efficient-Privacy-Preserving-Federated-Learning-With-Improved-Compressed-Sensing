@@ -91,7 +91,7 @@ if __name__ == "__main__":
                         help="Local learning rate")
     parser.add_argument('-gr', "--global_rounds", type=int, default=1000)
     parser.add_argument('-ls', "--local_steps", type=int, default=20)
-    parser.add_argument('-algo', "--algorithm", type=str, default="FedAvg")
+    parser.add_argument('-algo', "--algorithm", type=str, default="FedCE")
     parser.add_argument('-jr', "--join_ratio", type=float, default=1.0,
                         help="Ratio of clients per round")
     parser.add_argument('-nc', "--num_clients", type=int, default=20,
@@ -104,6 +104,9 @@ if __name__ == "__main__":
                         help="Rounds gap for evaluation")
     parser.add_argument('-sfn', "--save_folder_name", type=str, default='models')
     parser.add_argument('-r', "--r", type=float, default=0.00005)
+
+    
+
 
     args = parser.parse_args()
 
@@ -121,9 +124,7 @@ if __name__ == "__main__":
     print("Local learing rate: {}".format(args.local_learning_rate))
     print("Total number of clients: {}".format(args.num_clients))
     print("Clients join in each round: {}".format(args.join_ratio))
-    print("Client drop rate: {}".format(args.client_drop_rate))
-    print("Time select: {}".format(args.time_select))
-    print("Time threthold: {}".format(args.time_threthold))
+
     print("Global rounds: {}".format(args.global_rounds))
     print("Running times: {}".format(args.times))
     print("Dataset: {}".format(args.dataset))

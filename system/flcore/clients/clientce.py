@@ -43,8 +43,6 @@ class clientCE(Client):
         fixed_model = copy.deepcopy(self.model)
 
         max_local_steps = self.local_steps
-        if self.train_slow:
-            max_local_steps = np.random.randint(1, max_local_steps // 2)
 
         for step in range(max_local_steps):
             for i, (x, y) in enumerate(trainloader):
@@ -53,8 +51,6 @@ class clientCE(Client):
                 else:
                     x = x.to(self.device)
                 y = y.to(self.device)
-                if self.train_slow:
-                    time.sleep(0.1 * np.abs(np.random.rand()))
                 self.optimizer.zero_grad()
                 output = self.model(x)
                 ce_loss = self.loss(output, y)
