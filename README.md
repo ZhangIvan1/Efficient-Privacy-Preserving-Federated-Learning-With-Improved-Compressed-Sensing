@@ -13,7 +13,15 @@ With the installed conda, you can run this project in a conda virtual environmen
 
 ## Usage
 
-Some descriptions on the way.
+Note that the dataset needs to be prepared before running main.py
+in folder "dataset"
+```
+  cd ./dataset
+  python generate_mnist.py iid - - # for iid and unbalanced setting
+  # python generate_mnist.py noniid - - # for pathological noniid setting
+  # python generate_mnist.py noniid - dir # for practical noniid setting
+  # python generate_mnist.py noniid - noise # for feature skew noniid setting
+```
 
 ## Comparison Schemes
 
