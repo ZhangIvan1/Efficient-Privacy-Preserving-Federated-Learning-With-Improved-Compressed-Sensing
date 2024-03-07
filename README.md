@@ -44,9 +44,11 @@ If you find this repository useful, please cite our paper:
   author={Zhang, Yifan and Miao, Yinbin and Li, Xinghua and Wei, Linfeng and Liu, Zhiquan and Choo, Kim-Kwang Raymond and Deng, Robert H.},
   journal={IEEE Transactions on Industrial Informatics}, 
   title={Efficient Privacy-Preserving Federated Learning With Improved Compressed Sensing}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-11},
+  year={2024},
+  volume={20},
+  number={3},
+  pages={3316-3326},
+  keywords={Computational modeling;Data models;Servers;Training;Privacy;Federated learning;Data privacy;CKKS;communication costs;compression sensing (CS);federated learning (FL);homomorphic encryption},
   doi={10.1109/TII.2023.3297596}}
+
 ```
