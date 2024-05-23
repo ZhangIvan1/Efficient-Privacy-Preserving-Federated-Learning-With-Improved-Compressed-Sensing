@@ -34,7 +34,7 @@ class clientCE(Client):
         # self.compressed_model.package_de(self.ckks_tools)
         if self.compressed_model.is_Compressed is True:
             self.compressed_model.package_decompresion(self.r)
-        self.compressed_model = copy.deepcopy(
+        self.model = copy.deepcopy(
             self.compressed_model.unpack(copy.deepcopy(self.model), self.device))
 
         # self.model.to(self.device)
